@@ -69,7 +69,7 @@ function GridTest(props) {
       {id: 'Option1', parent:'Prod1', description: 'X Toner 12', content: 'Black Toner for the printer'}
     ]);
 
-    const gridSettings = createGrid('x-powergrid-125', columns, level1, [lazytreegrid, directinput]);
+    const gridSettings = createGrid('x-powergrid-125', columns, level1, [directinput]);
 
     return (<div className="flex-form-container">
         <div className='flex-item'>

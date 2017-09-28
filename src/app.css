@@ -12,5 +12,30 @@
 }
 
  body{
-    background-color: #B0C4DE;
+    background-color: #D3D3D3;
+    margin-right: 50px;
+    margin-left: 50px;
+ }
+
+ .menuStyle {
+   background-color: #FFFFE0;
+   color: white;
+   padding: 10px;
+ }
+
+ .textStyle {
+   background-color: #F8F8FF;
+   color: black;
+   padding: 10px;
+   font-family: "Comic Sans MS", cursive, sans-serif
+ }
+
+ .simpleGridWithNoExtensions {
+   top : 255px;
+   height: 200px;
+ }
+
+ .simpleGridWithExtensions {
+   top : 600px;
+   height: 200px;
  }

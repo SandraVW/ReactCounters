@@ -1,6 +1,6 @@
 import { INCREMENT, DECREASE } from './actions';
 
-export default function rootReducer(state, action){
+export default function rootReducer(state = {}, action){
   switch(action.type) {
     case INCREMENT: return increment(state, action);
     case DECREASE: return decrease(state, action);
