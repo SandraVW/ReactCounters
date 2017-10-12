@@ -51,9 +51,9 @@ function extDependencies(props) {
             <div className="textStyle">
               <h1>Dependencies between extensions</h1>
               <p>
-                As described in the "introduction to extensions" an extension is overwritting a function of the grid. Because of this, it is import to load them in the correct order. A dependency between two extensions can be created by adding a loadFirst: ['nameOtherExtension'] before the init function.
-                By adding this dependency it can be that an extension is load into the grid without having it explitly requested. <br /><br />
-                The grid bellow will give an overview of the dependencies between the current extensions. In the columns you see the extensions selected that should be loaded before loading the extension. <br /><br />
+                As described in the "introduction to extensions" an extension may overwrite a function of the grid. Because of this, it is important to load them in the correct order. A dependency between two extensions can be created by adding a loadFirst: ['nameOtherExtension'] before the init function.
+                By adding this dependency it can be the case that an extension is loaded without having explicitly requested it. <br /><br />
+                The grid below will give an overview of the dependencies between the current extensions. In the columns you can see that the extensions are selected that should be loaded first. <br /><br />
                 <div className="simpleGridWithNoExtensions">
                     <PowergridComponent dispatch={props.dispatch} {...gridSettingsWithExtension}/>
                 </div>

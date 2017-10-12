@@ -24,7 +24,7 @@ class Main extends React.Component {
             <div className="textStyle">
               <h2>General Information</h2>
               <p>
-              The PowerGrid is a powerfull and reusable HTML5 grid component. <br /><br />
+              The PowerGrid is a powerful and reusable HTML5 grid component. <br /><br />
               Master Grid Repository: https://github.com/PearlChain/PowerGrid <br />
               Maintainer: Sandra Van Woensel<br /><br />
               <h3>Usages of the Grid in Pearl Chain: </h3>

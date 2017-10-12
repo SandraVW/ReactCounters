@@ -10,10 +10,10 @@ import { directinput } from 'component-lib';
 const columns = fromJS([
     {_key: 'id', width: 50, title: 'Nr'},
     {_key: 'fileName', width: 450, title: 'Filename'},
-    {_key: 'availableInCanon', width: 150, title: 'In CPQ', type: 'checkbox'},
-    {_key: 'availableInPearlChainMaster', width: 150, title: 'In Master', type: 'checkbox' },
-    {_key: 'availableInReact', width: 150, title: 'In React', type: 'checkbox' },
-    {_key: 'availableInMIM', width: 150, title: 'In MIM/Dashboards', type: 'checkbox' },
+    {_key: 'availableInCanon', width: 150, title: 'CPQ', type: 'checkbox'},
+    {_key: 'availableInPearlChainMaster', width: 150, title: 'Master', type: 'checkbox' },
+    {_key: 'availableInReact', width: 150, title: 'Component-lib', type: 'checkbox' },
+    {_key: 'availableInMIM', width: 150, title: 'MIM/Dashboards', type: 'checkbox' },
     {_key: 'created', width: 150, title: 'Outside PC', type: 'checkbox' },
 
 ]);
@@ -50,7 +50,7 @@ const extensions = fromJS([
       {id: '29', fileName: 'grouping.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},
       {id: '30', fileName: 'rowhighlighting.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},
       {id: '31', fileName: 'selection.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},
-      {id: '32', fileName: 'sorting.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},
+      {id: '32', fileName: 'sorting.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: true, created: false},
       {id: '33', fileName: 'statistics.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},
       {id: '34', fileName: 'subgrids.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: true, created: false},
       {id: '35', fileName: 'subview.js', availableInCanon:true,  availableInPearlChainMaster: true, availableInReact: false, availableInMIM: false, created: false},

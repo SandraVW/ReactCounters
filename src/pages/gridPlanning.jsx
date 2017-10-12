@@ -26,9 +26,9 @@ function gridPlanning(props) {
             <div className="textStyle">
               <p><img src={imagePlanning} height="180" width="600"></img></p>
               <p><h3>Done</h3>
-              - Documenting the general PowerGrid< br/>
-              - Creating an overview of all available Exensions< br />
-              - Creation of a development environment for new Extensions<br />
+              - Documenting the general PowerGrid<br/>
+              - Creating an overview of all available extensions<br />
+              - Creation of a development environment for new extensions<br />
               <h3>To Do</h3>
               - Review the current documentation and extend the React part<br/>
               - Make this site bugfree :) <br/>

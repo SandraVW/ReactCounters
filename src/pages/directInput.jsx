@@ -54,7 +54,7 @@ function directInput(props) {
                   <li>fullWidth: true</li>
                   <li>rowHeight: 31</li>
                 </ol>
-              The property called virtualScrollingExcess defines the number of extra rows to render on each side (top/bottom) of the viewport. This reduces flickering when scrolling. The options.columns should be filled with an arrayslist that defines the different columns in the grid.
+              The property called virtualScrollingExcess defines the number of extra rows to render on each side (top/bottom) of the viewport. This reduces flickering when scrolling. The options.columns should be filled with an array that defines the different columns in the grid.
               Each column is identfied by a key. This key can be provided by the datasource, if not the grid will use the sequence of the column. In the example only key, width, title and type are given as properties from the columns.
               It can be that some extensions requires some additional poperties on the column. For example the threegrid extension requires to identify a treecolumn.<br /><br />
 
@@ -67,7 +67,7 @@ function directInput(props) {
               </p>
               <h2>Creation of the DataSource</h2>
               <div>
-                <p>When creating the grid some options are required. One of this options is called DataSource. A dataSource is an object that contains the data. By default the PowerGrid is not creating a datasource. <br /><br />
+                <p>When creating the grid some options are required. One of this options is called DataSource. A dataSource is an object that provides the data. By default the PowerGrid does not create a datasource. <br /><br />
 
                 For the DataSource Object the following methods should be available:
                 <ol>
@@ -77,14 +77,13 @@ function directInput(props) {
                   <li>setValue()</li>
                   <li>getRecordById()</li>
                   <li>IsReady()</li>
-                  <li>Load()</li>
                 </ol>
                 In the PowerGrid Repository the following DataSources are available to use:
                 <ol>
                   <li>jsondatasource</li>
                   <li>arraydatasource</li>
-                  <li>sortingdatasource</li>
-                  <li>groupingdatasource</li>
+                  <li>sortingdatasource (extensions)</li>
+                  <li>groupingdatasource (extensions)</li>
                 </ol>
                </p>
               </div>

@@ -42,21 +42,20 @@ function directInput(props) {
             <div className="textStyle">
               <h1>Intoduction to extensions</h1>
               <p>
-                By default a grid is just showing some data in a table. An extenstion can be defined as a file that add some functionality to the basic grid. Bellow an example of a grid without any extension: <br />
+                By default a PowerGrid only shows static data in a table. An extension can be defined as a file that add some functionality to the basic grid. Below is an example of a grid without any extensions: <br />
                 <div className="simpleGridWithNoExtensions">
                     <PowergridComponent dispatch={props.dispatch} {...gridSettings}/>
                 </div>
-                Bellow the same grid with the extension called directInput.
+                Below the same grid with the extension called directInput.
                 <div className="simpleGridWithExtensions">
                     <PowergridComponent dispatch={props.dispatch} {...gridSettingsWithExtension}/>
                 </div>
-                The extension called directInput will display columns with type "checkbox" or "radio" as respective inputs. This extension will be used to discribe how an extension work. <br />
-                Every extension is created in a  separate file and contains the define function. This function is defined in RequireJS. RequireJS is a JavaScript file and module loader and is optimized for in-browser use.
-                Using a modular script loader like RequireJS will improve the speed and quality of your code. For every extension the define function will return an init function. JavaScript doesn't have a built-in init() function because it's not a part of the language.
-                But it is not uncommon like here that a init function is manually created. <br /><br />
+                The extension called directInput will display columns with type "checkbox" or "radio" as respective inputs. This extension will be used as an example to describe how an extension works. <br />
+                Every extension is created in a separate file and contains the define function. This function is defined in RequireJS. RequireJS is a JavaScript file and module loader and is optimized for in-browser use.
+                Using a modular script loader like RequireJS will improve the speed and quality of your code. For every extension the define function will return an init function. <br /><br />
 
-                In the init function an overwrite of the grid function is done by the following code: override(grid, function($super)). Within this structure you can overwrite a function of the grid. In the extension directInput the function renderCellContent is overwritten.
-                This function will check if the column type is checkbox or radio and returns an input html object if this is the case. If no type is defined on the column this extension will not work.
+                In the init function an overwrite of the grid function is done by the following code: override(grid, function($super)). Within this structure you can overwrite a function of the grid similar to how a Java overwrite works. In the extension directInput the function renderCellContent is overwritten.
+                This function will check if the column type is checkbox or radio and returns an input html object if this is the case. If no type is defined on the column this extension will not do nothing.
               </p>
             </div>
         </div>
