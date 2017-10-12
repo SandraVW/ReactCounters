@@ -28,11 +28,16 @@ function directInput(props) {
 
   return  <div>
              <h1 className="element">PowerGrid</h1>
-             <h2 className="headerTwoStyle">Welcome to the PowerGrid Documentation</h2>
+             <h3 className="headerTwoStyle">Welcome to the PowerGrid Documentation</h3>
              <div className="menuStyle">
+                <Link id='HomePageLink' to='/Main.jsx'>Home</Link>&nbsp;>&nbsp;
                 <Link id='BasicGridInfo' to='/pages/directInput'>Preparation</Link>&nbsp;>&nbsp;
                 <Link id='BasicGridInfo' to='/pages/gridDefinition'>Creation</Link>&nbsp;>&nbsp;
-                <Link id='BasicGridInfo' to='/pages/extensionIntro'>Extensions Intro</Link>
+                <Link id='BasicGridInfo' to='/pages/extensionIntro'>Extensions Intro</Link>>&nbsp;>&nbsp;
+                <Link id='extenOver'     to='/pages/extOverview'>Extension Overview</Link>&nbsp;>&nbsp;
+                <Link id='extenDep'      to='/pages/extDependencies'>Extension Dep</Link>&nbsp;>&nbsp;
+                <Link id='planningGrid'  to='./pages/gridPlanning'>Planning</Link>&nbsp;>&nbsp;
+                <Link id='reactGrid'     to='./pages/gridReact'>React</Link>
             </div>
             <div className="textStyle">
               <h1>Intoduction to extensions</h1>
@@ -45,14 +50,13 @@ function directInput(props) {
                 <div className="simpleGridWithExtensions">
                     <PowergridComponent dispatch={props.dispatch} {...gridSettingsWithExtension}/>
                 </div>
-                The extesion called directInput will display columns with type "checkbox" or "radio" as respective inputs. This extension will be used to discribe how an extension work. <br />
+                The extension called directInput will display columns with type "checkbox" or "radio" as respective inputs. This extension will be used to discribe how an extension work. <br />
                 Every extension is created in a  separate file and contains the define function. This function is defined in RequireJS. RequireJS is a JavaScript file and module loader and is optimized for in-browser use.
                 Using a modular script loader like RequireJS will improve the speed and quality of your code. For every extension the define function will return an init function. JavaScript doesn't have a built-in init() function because it's not a part of the language.
                 But it is not uncommon like here that a init function is manually created. <br /><br />
 
-                Before creating
-                loadFirst: ['editing']
-
+                In the init function an overwrite of the grid function is done by the following code: override(grid, function($super)). Within this structure you can overwrite a function of the grid. In the extension directInput the function renderCellContent is overwritten.
+                This function will check if the column type is checkbox or radio and returns an input html object if this is the case. If no type is defined on the column this extension will not work.
               </p>
             </div>
         </div>

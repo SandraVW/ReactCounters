@@ -24,11 +24,16 @@ function directInput(props) {
 
   return  <div>
              <h1 className="element">PowerGrid</h1>
-             <h2 className="headerTwoStyle">Welcome to the PowerGrid Documentation</h2>
+             <h3 className="headerTwoStyle">Welcome to the PowerGrid Documentation</h3>
              <div className="menuStyle">
+                <Link id='HomePageLink' to='/Main.jsx'>Home</Link>&nbsp;>&nbsp;
                 <Link id='BasicGridInfo' to='/pages/directInput'>Preparation</Link>&nbsp;>&nbsp;
                 <Link id='BasicGridInfo' to='/pages/gridDefinition'>Creation</Link>&nbsp;>&nbsp;
-                <Link id='BasicGridInfo' to='/pages/extensionIntro'>Extensions Intro</Link>
+                <Link id='BasicGridInfo' to='/pages/extensionIntro'>Extensions Intro</Link>>&nbsp;>&nbsp;
+                <Link id='extenOver'     to='/pages/extOverview'>Extension Overview</Link>&nbsp;>&nbsp;
+                <Link id='extenDep'      to='/pages/extDependencies'>Extension Dep</Link>&nbsp;>&nbsp;
+                <Link id='planningGrid'  to='./pages/gridPlanning'>Planning</Link>
+                <Link id='reactGrid'     to='./pages/gridReact'>React</Link>
             </div>
             <div className="textStyle">
               <h1>What do I need to create a PowerGrid? </h1>
